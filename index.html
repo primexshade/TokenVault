@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Rate Checker</title>
+    <link rel="stylesheet" href="styke.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TokenVault</h1>
+        <div class="rate">
+            <h2>Current Bitcoin Rate (USD):</h2>
+            <p id="btc-rate">$0</p>
+        </div>
+        <div class="balance">
+            <h2>Your Bitcoin Balance:</h2>
+            <input type="number" id="btc-balance" placeholder="Enter your BTC amount">
+            <button onclick="calculateBalance()">Calculate Balance</button>
+            <p>Your Balance in USD: <span id="usd-balance">$0</span></p>
+        </div>
+
+        <!-- Bitcoin Quiz Section -->
+        <div class="quiz">
+            <h2>Bitcoin Quiz</h2>
+            <div id="question-container">
+                <p id="question">What is Bitcoin?</p>
+                <button class="quiz-option" onclick="checkAnswer('a')">A digital currency</button>
+                <button class="quiz-option" onclick="checkAnswer('b')">A type of stock</button>
+                <button class="quiz-option" onclick="checkAnswer('c')">A social network</button>
+                <button class="quiz-option" onclick="checkAnswer('d')">A physical coin</button>
+            </div>
+            <p id="result"></p>
+            <button onclick="nextQuestion()">Next Question</button>
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
